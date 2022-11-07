@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrar">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="54dp"
+        android:text="Registrarse"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="162dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="First Name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Last Name"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="textVisiblePassword"
+        android:text="Password"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:inputType="textVisiblePassword"
+        android:text="Confirm Password"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Acepto las póliticas de tratamiento de datos"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="49dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+</androidx.constraintlayout.widget.ConstraintLayout>
